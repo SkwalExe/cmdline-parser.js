@@ -17,7 +17,7 @@ cmdline-parser.js is a tool allowing you to retrieve all the information and com
 # JsDelivr
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/SkwalExe/cmdline-parser.js@v0.1.0/dist/cmdlineparser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SkwalExe/cmdline-parser.js@v0.2.0/dist/cmdlineparser.min.js"></script>
 ```
 
 # Usage 📝
@@ -76,6 +76,7 @@ The `Command` object is a representation of a command and has the following prop
 - `invalidReason`: the reason why the command is invalid as a string
 - `args`: array of arguments passed to the command
 - `name`: the name of the command
+- `text`: the original command line
 
 We also parse redirectors etc like `>`, `>>`, `<`, `<<`, `|`, `||`, `&&` inside the corresponding token
 

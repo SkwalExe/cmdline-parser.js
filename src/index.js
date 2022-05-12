@@ -30,6 +30,7 @@ const CmdLineParser = class {
         this['<'] = [];
         this['<<'] = [];
         this.name = null;
+        this.text = null;
       }
     }
 
@@ -57,6 +58,8 @@ const CmdLineParser = class {
       let gtgtIndex = -1
       let ltIndex = -1
       let ltltIndex = -1
+
+      commandObject.text = string;
 
       for (let i = 0; i < string.length; i++) {
         if (ignoreNextChar) {
