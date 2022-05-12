@@ -156,11 +156,13 @@ const CmdLineParser = class {
 
       command = command.split(' ')
       commandObject.name = command.shift();
-      commandObject.args = this.parseArgs(command.join(' ')).filter(x => x.trim().length > 0);
+      commandObject.args = this.parseArgs(command.join(' '))
 
       if (commandObject.args === -1) {
         commandObject.invalid = true;
         commandObject.invalidReason = 'Unclosed Quote';
+      } else {
+        commandObject.args = commandObject.args.filter(x => x.trim().length > 0);
       }
 
       commandObject['>'] = commandObject['>'].map(str => str.trim()).filter(x => x.trim().length > 0);

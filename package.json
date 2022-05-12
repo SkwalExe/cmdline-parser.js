@@ -1,6 +1,6 @@
 {
   "name": "cmdline-parser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Command line information parser",
   "main": "src/index.js",
   "scripts": {
