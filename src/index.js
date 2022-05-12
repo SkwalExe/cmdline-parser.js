@@ -106,7 +106,12 @@ const CmdLineParser = class {
           }
 
           if (token === '&&') {
-            commandObject['&&'] = this.parseCommand(string.substring(i + 1));
+            commandObject['&&'] = this.parseCommand(string.substring(i + 2));
+            break
+          }
+
+          if (token === '||') {
+            commandObject['||'] = this.parseCommand(string.substring(i + 2));
             break
           }
         } else {
