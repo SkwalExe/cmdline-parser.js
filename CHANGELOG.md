@@ -1,3 +1,6 @@
+# 0.2.0
+- add new property to Command oject : `text`
+
 # 0.1.1
 - fix bug
 
