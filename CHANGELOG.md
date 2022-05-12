@@ -1,3 +1,7 @@
+# 0.2.1
+- `&&` wrongly parsed
+- fix `||` parsing
+
 # 0.2.0
 - add new property to Command oject : `text`
 

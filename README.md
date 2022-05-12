@@ -17,7 +17,7 @@ cmdline-parser.js is a tool allowing you to retrieve all the information and com
 # JsDelivr
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/SkwalExe/cmdline-parser.js@v0.2.0/dist/cmdlineparser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SkwalExe/cmdline-parser.js@v0.2.1/dist/cmdlineparser.min.js"></script>
 ```
 
 # Usage 📝
