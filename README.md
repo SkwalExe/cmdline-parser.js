@@ -1,8 +1,8 @@
 # CmdLineParser.js
 
-![](images/banner.png)
-
 cmdline-parser.js is a tool allowing you to retrieve all the information and components of a command line 🐚
+
+![](assets/banner.png)
 
 # Features ✨
 
@@ -20,24 +20,27 @@ cmdline-parser.js is a tool allowing you to retrieve all the information and com
 <script src="https://cdn.jsdelivr.net/gh/SkwalExe/cmdline-parser.js@v0.2.1/dist/cmdlineparser.min.js"></script>
 ```
 
-# Usage 📝
+# NPM module 
 
-**You can use the library in the browser ([jsdelivr](#jsdelivr))**
+Install the npm module 
 
-To use with node.js, you can use the npm package:
-```
+```bash
 npm install cmdline-parser
 ```
 
-# Parsing your first commands ✨
+And import it in your project 
 
 ```js
-// Node.js only
 const CmdLineParser = require('cmdline-parser');
-///////////////
 
-const myParser = new CmdLineParser();
+let myParser = new CmdLineParser();
 ```
+
+# Setting up 
+
+You can import the library into you website with [JsDelivr](#JsDelivr) or, you can use the [npm module](#NPM-module) and import it in your project.
+
+# Parsing your first commands ✨
 
 ### Parsing a command line
 
