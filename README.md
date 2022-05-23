@@ -17,7 +17,7 @@ cmdline-parser.js is a tool allowing you to retrieve all the information and com
 # JsDelivr
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/SkwalExe/cmdline-parser.js@v0.2.1/dist/cmdlineparser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SkwalExe/cmdline-parser.js@v0.2.2/dist/cmdlineparser.min.js"></script>
 ```
 
 # NPM module 
@@ -117,7 +117,7 @@ If you have any problem, don't hesitate to open an issue
 
 5. Then make your changes
 
-6. Update the changelog and version number if needed (using [Semantic Versioning](https://semver.org)) 
+6. Update the changelog and version number if needed (using [Semantic Versioning](https://semver.org)) also, update the version number in the JsDelivr links
   ```bash
   # bug fix
   npm version patch --no-git-tag-version
