@@ -190,14 +190,16 @@ const CmdLineParser = class {
       for (let i = 0; i < str.length; i++) {
         let char = str[i];
         if (char === '"') {
-          if (!singleQuote)
+          if (!singleQuote) {
             doubleQuote = !doubleQuote;
-          continue;
+            continue;
+          }
         }
         if (char === '\'') {
-          if (!doubleQuote)
+          if (!doubleQuote) {
             singleQuote = !singleQuote;
-          continue;
+            continue;
+          }
         }
 
         if (char === ' ' && !doubleQuote && !singleQuote) {

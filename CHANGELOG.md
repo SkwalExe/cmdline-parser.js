@@ -1,3 +1,7 @@
+# 0.2.2
+- Fix quote parsing
+- Fix #9
+
 # 0.2.1
 - `&&` wrongly parsed
 - fix `||` parsing

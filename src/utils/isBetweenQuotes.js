@@ -3,33 +3,36 @@ const isBetweenQuotes = (str, index) => {
   let doubleQuote = false;
   let singleClosed = true;
   let doubleClosed = true;
+  let quoted = false;
   let indexPassed = false;
 
 
   for (let i = 0; i < str.length; i++) {
     let char = str[i]
     if (char === '"') {
-      if (singleQuote)
-        continue;
-      doubleClosed = !doubleClosed;
-      if (!indexPassed)
+      if (!singleQuote) {
+        doubleClosed = !doubleClosed;
         doubleQuote = !doubleQuote;
-
+      }
     }
 
     if (char === '\'') {
-      if (doubleQuote)
-        continue;
-      singleClosed = !singleClosed;
-      if (!indexPassed)
+      if (!doubleQuote) {
+
+        singleClosed = !singleClosed;
         singleQuote = !singleQuote;
+      }
     }
 
     if (i === index) {
       indexPassed = true;
+      if (doubleQuote || singleQuote)
+        quoted = true;
     }
 
-    if (indexPassed && (doubleClosed && doubleQuote) || (singleClosed && singleQuote))
+    console.log('char: ' + char + ' Quoted : ' + quoted + ' Doublequote: ' + doubleQuote + ' SingleQuote: ' + singleQuote + ' SingleClosed: ' + singleClosed + ' DoubleClosed: ' + doubleClosed + ' Quoted: ' + quoted + ' IndexPassed: ' + indexPassed)
+
+    if (indexPassed && quoted && doubleClosed && singleClosed)
       return true;
 
   }
